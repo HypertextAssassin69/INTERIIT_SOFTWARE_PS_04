@@ -171,16 +171,3 @@ SelfWAM outperforming selected VLA/WAM baselines on specific benchmarks is evide
 3. Benchmark superiority does not automatically imply paradigm superiority.
 4. Training is computationally substantial.
 
-## 18. PS-04 defence notes
-
-If asked “What is the main claim?”:
-
-> SelfWAM argues that future prediction becomes more useful for robot control when it is explicitly grounded in the specific action, and that this can improve policy learning.
-
-If asked “What experiment do you trust most?”:
-
-> The controlled action-sensitivity test, because it directly changes the action while holding the observation context fixed, making it more directly relevant to the paper's central mechanism than a raw success-rate comparison.
-
-If asked “What is the biggest weakness?”:
-
-> The real-world evaluation is too small to support a broad claim about general-purpose robotics, and action-sensitive predictions are not automatically physically correct.
