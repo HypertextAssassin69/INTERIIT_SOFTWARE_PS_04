@@ -12,6 +12,10 @@ Inter-IIT Tech Meet PS-04 research notes.
 
 > For general-purpose robotics, how useful is direct vision-language-action learning compared with explicitly modeling action-conditioned future world states? Does a hybrid approach provide a better trade-off?
 
+## My research position
+
+My first-person reasoning, examples and falsifiable conclusion are collected in [reflections/PS-04_personal_research_responses.md](reflections/PS-04_personal_research_responses.md). This is intentionally separated from the paper notes: it records my interpretation of the evidence rather than the papers' claims.
+
 ## Important methodology
 
 For every paper, distinguish:
