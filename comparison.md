@@ -1,4 +1,4 @@
-# First Two Papers — Working Comparison
+# Three Papers — Working Comparison
 
 ## The conceptual difference
 
@@ -36,17 +36,18 @@ A more defensible statement is:
 
 Modern systems can overlap these categories.
 
-## Current evidence map
+## Evidence map
 
-| Question | RT-2 | SelfWAM |
+| Question | RT-2 | SelfWAM | DreamZero |
 |---|---|---|
-| Semantic/generalization transfer | Strong focus | Less central |
-| Explicit action-conditioned future prediction | Not the central mechanism | Central mechanism |
-| Direct action generation | Yes | Yes |
-| Future visual prediction | Not central | Yes |
-| Real-world testing | Yes | Yes |
-| Controlled test of core mechanism | Less direct | Stronger direct action-sensitivity test |
-| Evidence for universal general-purpose superiority | No | No |
+| Semantic/generalization transfer | Strong focus | Less central | Language following plus task/environment transfer |
+| Explicit action-conditioned future prediction | Not the central mechanism | Central mechanism | Central: jointly models video and action |
+| Direct action generation | Yes | Yes | Yes |
+| Future visual prediction | Not central | Yes | Yes, using a pretrained video-diffusion backbone |
+| Real-world testing | Yes | Yes | Yes |
+| Controlled test of core mechanism | Less direct | Stronger direct action-sensitivity test | Cross-task/environment and cross-embodiment transfer |
+| Main evidence limitation | Does not directly test explicit physics | Sensitivity is not physical correctness | WAM advantage is confounded with a 14B video backbone/data/compute |
+| Evidence for universal general-purpose superiority | No | No | No |
 
 ## Emerging research question
 
@@ -58,7 +59,7 @@ but rather:
 
 > “When does explicit predictive world modeling provide enough additional value over direct VLA policies to justify its data, compute, modeling and planning complexity?”
 
-## Hypothesis to test with Paper 3
+## Provisional conclusion after Paper 3
 
 A hybrid approach could potentially divide responsibilities:
 
@@ -66,6 +67,8 @@ A hybrid approach could potentially divide responsibilities:
 - WAM: action-conditioned prediction, physical consequences, local planning;
 - controller: execute and observe actual outcomes.
 
-But this is currently a **hypothesis**, not our conclusion.
+DreamZero provides independent, promising evidence that large-scale video priors may improve physical and cross-embodiment transfer. However, it does not isolate whether the benefit comes from explicit world-action modeling, the pretrained video backbone, the data mixture, or the compute budget.
 
-We need Paper 3 to give us independent evidence before deciding.
+Therefore the defensible PS-04 conclusion is not “WAM beats VLA.” It is:
+
+> VLA-style semantic grounding and WAM-style action-conditioned prediction appear complementary; stronger matched comparisons are still needed to establish when the predictive component justifies its complexity.
